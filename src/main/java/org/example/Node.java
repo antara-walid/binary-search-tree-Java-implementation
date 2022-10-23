@@ -6,7 +6,7 @@ public class Node {
     private Node right;
 
     // constructor
-    private Node(int data) {
+    public Node(int data) {
         this.data = data;
     }
 
@@ -40,7 +40,7 @@ public class Node {
                 return left.contains(data);
             } else {
                 if (right == null)
-                    return true;
+                    return false;
                 return right.contains(data);
             }
 
